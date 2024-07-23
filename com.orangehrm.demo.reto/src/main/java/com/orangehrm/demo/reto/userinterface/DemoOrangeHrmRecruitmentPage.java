@@ -25,7 +25,7 @@ public class DemoOrangeHrmRecruitmentPage {
             located(By.cssSelector(".oxd-select-text"));
 
     public static final Target OPTION_VACANCY = Target.the("where do writer Option Vacancy").
-            located(By.xpath("//span[contains(.,'test')]"));
+            located(By.xpath("//span[contains(.,'Payroll Administrator')]"));
     public static final Target INPUT_EMAIL = Target.the("where do writer Email").
             located(By.xpath("(//input[@data-v-1f99f73c])[5]"));
     public static final Target INPUT_CONTACT = Target.the("where do writer Input_Contact").
@@ -46,6 +46,10 @@ public class DemoOrangeHrmRecruitmentPage {
     public static final Target BUTTON_SUCCES = Target.the("where do writer firstName").
             located(By.cssSelector(".oxd-button--success"));
 
+    public static final Target BUTTON_SEARCH = Target.the("where do writer firstName").
+            located(By.cssSelector(".orangehrm-left-space"));
+
+
     public static final Target INPUT_INTERVIEW_TITLE = Target.the("where do writer firstName").
             located(By.xpath("(//input[contains(@class,'oxd-input oxd-input--active')])[6]"));
 
@@ -53,7 +57,7 @@ public class DemoOrangeHrmRecruitmentPage {
             located(By.cssSelector(".oxd-autocomplete-text-input > input"));
 
     public static final Target SELECT_OPTION_INTERVIEWEER = Target.the("where do writer select option Intervieweer").
-            locatedBy("//div[@role='listbox' and contains(@class, 'oxd-autocomplete-dropdown')]//div[@role='option' and contains(@class, 'oxd-autocomplete-option')][1]");
+            locatedBy("//div[@role='listbox' and contains(@class, 'oxd-autocomplete-dropdown')]//div[@role='option' and contains(@class, 'oxd-autocomplete-option')][1]/span");
 
     public static final Target INPUT_DATE = Target.the("where do writer Date").
             located(By.cssSelector("[placeholder='yyyy-dd-mm']"));
@@ -63,7 +67,7 @@ public class DemoOrangeHrmRecruitmentPage {
 
 
     public static final Target DROPDOWN_LIST_STATUS_VACANCY = Target.the("where do writer select option Intervieweer").
-            located(By.xpath("//div[@class='oxd-select-text oxd-select-text--focus']/div[@class='oxd-select-text-input']"));
+            locatedBy(".oxd-form div:nth-of-type(4) div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1)");
 
     public static final Target OPTION_LIST_STATUS_VACANCY = Target.the("where do writer select option Intervieweer").
             located(By.xpath("//span[.='Hired']"));
@@ -75,7 +79,7 @@ public class DemoOrangeHrmRecruitmentPage {
             located(By.xpath("//div[@class='oxd-table-card']//div[@class='oxd-table-cell oxd-padding-cell']/div[.='Payroll Administrator']"));
 
     public static final Target TEXT_FULL_NAME = Target.the("where do writer text hired").
-            located(By.xpath("//div[@class='oxd-table-card']//div[@class='oxd-table-cell oxd-padding-cell']/div[.='Jhon Arias  Gomez']"));
+            located(By.xpath("//div[@class='oxd-table-card']//div[@class='oxd-table-cell oxd-padding-cell']/div[.='Jhon Arias Gomez']"));
 
 
 

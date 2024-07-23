@@ -34,14 +34,14 @@ public class RecruitmentStepDefinitions {
     public void theUserMakesHisApplication() {
         OnStage.theActorInTheSpotlight().attemptsTo(
                 new AddRecruitment(),
-                new SaveProccessHire()
+                new SaveProccessHire(),
+                new SearchStatusVacancy()
         );
 
     }
 
     @Then("^It validates that the user was hired$")
     public void itValidatesThatTheUserWasHired() {
-        OnStage.theActorInTheSpotlight().attemptsTo(new SearchStatusVacancy());
         String ExpectFullName = "Jhon Arias Gomez";
         String ExpectVacancy = "Payroll Administrator";
         String ExpectStatusVacancy = "Hired";
