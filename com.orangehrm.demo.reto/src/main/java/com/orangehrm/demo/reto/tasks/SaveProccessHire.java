@@ -29,14 +29,6 @@ public class SaveProccessHire implements Task {
                 WaitUntil.the(DemoOrangeHrmRecruitmentPage.INPUT_DATE ,isVisible()).forNoMoreThan(20).seconds(),
                 Enter.theValue("2024-09-23").into(DemoOrangeHrmRecruitmentPage.INPUT_DATE),
                 Scroll.to(DemoOrangeHrmRecruitmentPage.BUTTON_SAVE),
-                WaitUntil.the(DemoOrangeHrmRecruitmentPage.BUTTON_SAVE , isEnabled()).forNoMoreThan(20).seconds(),
-                Click.on(DemoOrangeHrmRecruitmentPage.BUTTON_SAVE),
-                Click.on(DemoOrangeHrmRecruitmentPage.BUTTON_SUCCES),
-                Click.on(DemoOrangeHrmRecruitmentPage.BUTTON_SAVE),
-                Click.on(DemoOrangeHrmRecruitmentPage.BUTTON_JOB),
-                Click.on(DemoOrangeHrmRecruitmentPage.BUTTON_SAVE),
-                Click.on(DemoOrangeHrmRecruitmentPage.BUTTON_SUCCES),
-                Click.on(DemoOrangeHrmRecruitmentPage.BUTTON_SAVE),
                 Click.on(DemoOrangeHrmRecruitmentPage.OPTION_RECRUITMENT)
                 );
     }
